@@ -1,0 +1,342 @@
+
+button {
+  min-height: 30px;
+  min-width: 45px; 
+  text-align: center;
+  color: #1c2632;
+  background-color: #cccccc;
+  padding: 10px;
+  margin: 4px;
+   border-radius: 4px 4px 4px 4px;
+}
+
+.boldBright{
+  color: #cccccc;
+  font-style: italic;
+}
+
+p { 
+text-align: center;
+  color:white;
+}
+
+.buttonOff {
+
+}
+.buttonOff:hover {
+  
+}
+.buttonOn {
+  color: white;
+  background-color: #1c2632;
+}
+.buttonOn:hover {
+  
+}
+
+.selected {
+  background-color: gray;
+  color: white;
+}
+
+/* CODE BELOW COPIED FROM UI PROJECT I CREATED */
+
+body {
+  /*background-color: #273444;*/
+ /* background-image: url(" https://s14.postimg.org/9i2wt3tgh/tic_bk_3.png");*/
+   font-family: 'Comfortaa', cursive;
+ /*font-family: Lucida Console;*/
+
+}
+h1 {
+  text-align: center;
+  color: white;
+  margin-bottom: -10px;
+}
+
+a{
+     text-decoration: none;
+  color:white;
+}
+
+.hideOverFlow{
+  overflow: hidden;
+  padding:10px;
+}
+
+.hamburger {
+    width: 35px;
+    height: 5px;
+    margin: 6px;
+    background-color: white;
+    pointer-events: none
+    margin: 6px 0;
+}
+.hamberger-boss {
+
+}
+
+.third-layer { /*used to center box of rows*/
+  width:100%;
+  justify-content: center;
+  display: flex;
+ }
+
+#gridBack.one { /*container for flex rows */
+  width: 310px;
+  justify-content: center;
+  background-color: #1c2632;
+  border-radius: 10px;
+}
+.flex-container { /* rows*/
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  text-align: center;
+  /*background-color: #6d8383;
+  border-radius: 10px;*/
+}
+.box{
+  width:100px;
+  height:100px;
+  vertical-align: middle;
+  line-height: 110px;
+  background: linear-gradient(#b3b3b3, #bdb9b5);
+  background-color: #b3b3b3;
+  box-shadow: -3px 3px 4px #070d13;
+}
+
+.m-l {
+  margin-left: 5px;
+}
+.m-b {
+  margin-bottom: 5px;
+}
+.box-taken {
+  background: none;
+  background-color: transparent;
+  box-shadow: 0px 0px 0px; /* this removes the shadow*/
+   text-shadow: -3px 3px #070d13;
+  font-size: 350%;
+  color: white;
+}
+.box-mine {
+  box-shadow: 0px 0px 0px;
+  background-color: #ffffff;
+  background: linear-gradient(#ffffff, #f2f2f2);
+  color: #132231;
+  font-size: 350%;
+}
+.background-shape {
+  width: 310px;
+  height:310px;
+  background-color:gray;
+  border-radius: 10px;
+  position:relative;
+  z-index: 1;
+  top: 10px;
+  
+}
+
+.c1{
+  border-radius: 10px 0px 0px 0px;
+}
+.c2{
+  border-radius: 0px 10px 0px 0px;
+}
+.c3{
+  border-radius: 0px 0px 0px 10px;
+}
+.c4{
+  border-radius: 0px 0px 10px 0px;
+}
+
+
+/* W3 School */
+.dropbtn {
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+  left: 65%;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    overflow: auto;
+    z-index: 1;
+  /* Below are astetics */
+    background-color: #253242;
+  opacity: 0.8;
+    margin-left: -35px;
+    margin-top: 10px;
+    padding: 10px;
+    text-align:center;
+  min-width:120px;
+    box-shadow: -3px 3px 4px #070d13;
+}
+
+.show {display:block;}
+/* W3 School */
+
+.unclickable {
+  opacity: 0.1;
+  pointer-events: none;
+}
+
+.gameMessage {
+ color: white;
+  background-color: #070d13;
+  width: 170px;
+  padding: 10px;
+  opacity: 0;
+ z-index: 10;
+  margin: auto;
+ border-radius: 0px 0px 0px 0px;
+ position: relative;
+  
+}
+
+body.one {
+  
+  background: linear-gradient(#1c2632, #253242);
+  background-color:#253242;
+  background-repeat: no-repeat;
+}
+body.two { 
+  background: linear-gradient(#B1F4CF, #9890e3);
+  background-color:#9890e3;
+    /* red color e39890 */
+  background-repeat: no-repeat;
+}
+
+h1.one {
+  text-align: center;
+  color: white;
+  text-shadow: -7px 7px #19222d;
+}
+h1.two {
+  color: white;
+  text-shadow: 0px 0px;
+  margin-bottom: -10px;
+}
+
+p.one{
+  color:#b3b3b3;
+}
+p.two{
+  color:#B1F4CF;
+}
+
+
+
+#gridBack.two{
+  background: none;
+  opacity: 0.8;
+}
+
+.box1 {
+  background: none ;
+  background-color:#a6afd8;
+  opacity: .8;
+  box-shadow: -2px -2px 20px #B1F4CF;
+
+}
+
+.box-taken1 {
+  background: none;
+  background-color: transparent;
+  box-shadow: 0px 0px 0px; /* this removes the shadow*/
+  text-shadow: 0px 0px;
+  font-size: 350%;
+  color: white;
+}
+
+.box-mine1 {
+  background: none #fff;
+  box-shadow: 0px 0px 0px; /* this removes the shadow*/
+  text-shadow: 0px 0px;
+  font-size: 350%;
+  color: #A6C8D8;
+}
+
+.test {
+  color: red;
+  background-color: red;
+  
+}
+
+button.tropic {
+  background-color:#d7e1cb;
+   width:70px;
+  color: #533775;
+}
+
+button.navy {
+  background-color:#505a67;
+  color: white;
+  width:70px;
+}
+
+.xOButt {
+  width:20px;
+  display:inline-block;
+}
+
+
+/* W3 school - The Modal (background) */
+.modal {
+    display: block; /* displayed  by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 10px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background: linear-gradient(#1c2632, #253242);
+    background-color:#253242;
+
+}
+
+/* Modal Content */
+.modal-content {
+  text-align: center;
+    margin: auto;
+    padding: 5px;
+  padding-top:5%;
+}
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+hr.style1{
+	border: 5px solid #1c2632;
+  margin: 20px;
+}
+
+.startGame {
+  font-family: 'Comfortaa', cursive;
+  background: linear-gradient(#1c2632, #253242);
+  min-width: 150px;
+  color: white;
+  font-weight: 100;
+  font-size: 80%;
+  /* */
+}

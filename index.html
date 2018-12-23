@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Tic Tac Toe (FCC)</title>
+  
+  
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  <head> <link href="https://fonts.googleapis.com/css?family=Comfortaa|Righteous" rel="stylesheet">
+             </head>
+
+<body id="bdy" class="one">
+   
+<div class="dropdown">
+  <div class="hamberger-boss dropbtn" onclick="openMenu()">
+  <div class="hamburger dropbtn"></div>
+  <div class="hamburger dropbtn"></div>
+  <div class="hamburger dropbtn"></div>
+   </div>
+
+  <div id="myDropdown" class="dropdown-content">
+      <!-- //obsolete// <button id = "aiStarts" onclick="AIGoesFirstFun()"> Computer Goes First </button>
+      <br><br> -->
+    <!--<p> Difficulty Level: <p>
+      <button id="easy" class="buttonOn" onclick="difficultyLevel('easy')"> Easy </button> 
+      <button id="medium" onclick="difficultyLevel('medium')"> Difficult    </button> 
+      <button id="impossible"  onclick="difficultyLevel('impossible')"> Impossible </button> 
+    <br>-->
+    <p> Color Theme: <p>
+    <button id="colorThemeOne" class="navy"  onclick="colorTheme('default')"> Navy Night </button> 
+    <button id="colorThemeTwo" class="tropic"  onclick="colorTheme('morning')"> Tropic Morning </button> 
+    
+    <!--
+    <p>Chose your symbol: </p>
+
+    <button id = "ex" class="xOButt" onclick="ohEx('X')"><b> X </b></button> 
+    <button id = "oh" class="buttonOn xOButt" onclick="ohEx('O')"><b> O </b></button> 
+-->
+  </div>
+</div>
+
+<h1 id="styleH" class="one">Tic Tac Toe </h1>
+<b> <!--this b tag is oddly useful. I makes all of the letters bold -->
+    <p id="messages" class="gameMessage"> MESSAGE TO USER GOES HERE </p>
+  <div class="hideOverFlow">
+<div class="third-layer">
+<div id="gridBack" class="one">
+<div class ="flex-container">
+    <div class="box c1 m-b"
+       onclick="a(one)"
+       id="one"></div>
+  <div class="box m-b m-l"
+       onclick="a(two)"
+       id="two"> </div>
+  <div class="box c2 m-b m-l"
+       onclick="a(three)"
+       id="three"> </div>
+</div>
+<div class ="flex-container">
+  <div class="box m-b"
+       id="four" onclick="a(four)">  </div>
+  <div class="box m-b m-l"
+       onclick="a(five)"
+       id="five"> </div>
+  <div class="box m-b m-l"
+       onclick="a(six)"
+       id="six"> </div>
+</div>
+<div class ="flex-container">
+  <div class="box c3"
+       onclick="a(seven)"
+       id="seven"> </div>
+  <div class="box m-l"
+       onclick="a(eight)"
+       id="eight"> </div>
+  <div class="box c4 m-l"
+       onclick="a(nine)"
+       id="nine"> </div>
+</div>
+
+<!--<div class="background-shape">- </div>-->
+</div>
+</div>
+  </div> <!-- hidden overflow-->
+    <p id="scoreStyl" class="one"><b>Player: </b> <span style="color:white" id = "playerScore">0</span> <b>Computer: </b> <span style="color:white" id = "aiScore">0</span>
+    </b>
+  <br><br>
+
+  <!--
+ <p> (Think I want to use an SVG with a width of 100%) </p>
+ <p> the "Hamburger" icon would be cool as a gear icon  </p>
+<p style="color:white;"> I want to make it so that when you reset the game the tiles explode and orbit slightly outward and snap back in place</p> -->
+  
+<!-- w3 school -->
+  
+
+<!-- Trigger/Open The Modal 
+<button id="myBtn">menu</button> -->
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <h1 id="fade">Welcome! </h1> <br><br>
+    
+    <span class="boldBright"> Difficulty Level: </span><br>
+      <button id="easy" class="buttonOn " onclick="difficultyLevel('easy')"> Easy </button> 
+      <button id="medium" onclick="difficultyLevel('medium')"> Difficult    </button> 
+      <button id="impossible"  onclick="difficultyLevel('impossible')"> Impossible </button> 
+    <br><br> <!--
+   <span class="boldBright"> Choose your style: </span><br>
+    <button id="colorThemeOne" class="navy"  onclick="colorTheme('default')"> Dark</button> 
+    <button id="colorThemeTwo" class="tropic"  onclick="colorTheme('morning')"> Bright </button> -->
+    <br><br><span class="boldBright">Chose your symbol:</span><br>
+
+    <button id = "ex" class="xOButt" onclick="ohEx('X')"><b> X </b></button> 
+    <button id = "oh" class="buttonOn xOButt" onclick="ohEx('O')"><b> O </b></button> 
+    <br>
+    <hr class="style1">
+    <button id = "startGame" class="startGame" onclick="openClose()"><b>Start Game </b></button> 
+    
+  </div>
+
+</div>
+
+  
+</body>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js'></script>
+
+  
+
+    <script  src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>
